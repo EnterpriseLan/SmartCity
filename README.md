@@ -1,1 +1,1 @@
-# SmartCity BY Enterprise & GBHzz.
+# SmartCity BY EnterpriseLan & GBHzz.
