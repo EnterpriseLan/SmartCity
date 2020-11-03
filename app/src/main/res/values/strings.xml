@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">SmartCity</string>
+    <string name="title_activity_login2">Login2Activity</string>
+    <string name="title_activity_login3">Login3Activity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_index">IndexActivity</string>
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+
+    <string name="skip_wait">%d秒 跳过</string>
 </resources>

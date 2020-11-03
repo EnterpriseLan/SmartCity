@@ -2,7 +2,6 @@ package com.nbpt.smartcity;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -10,23 +9,20 @@ import android.widget.Toast;
 
 public class LoginActivity extends Activity {
     private EditText edtName,edtPassword;
-    private Button btnClear,btnSubmit;
+    private Button btnClear,btnSubmit,btnLoginOut;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_login);
 
         edtName = findViewById(R.id.text_username);
-        //edtName.setText("admin");
-
+        edtName.setHint("请输入用户名");
         edtPassword = findViewById(R.id.text_password);
-        String password = edtPassword.getText().toString();
-
-        //Log.d("TGA","密码："+password);
-
+        edtPassword.setHint("请输入密码");
         btnClear = findViewById(R.id.btn_clear);
         btnSubmit = findViewById(R.id.btn_submit);
+        btnLoginOut = findViewById(R.id.btn_loginOut);
 
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
@@ -46,14 +42,15 @@ public class LoginActivity extends Activity {
                            Toast.makeText(LoginActivity.this,"用户名密码错误！",Toast.LENGTH_LONG).show();
                        }
                        break;
+                   case R.id.btn_loginOut:
+                       LoginActivity.this.finish();
+                       break;
                }
             }
         };
         btnClear.setOnClickListener(listener);
         btnSubmit.setOnClickListener(listener);
-
-
-
+        btnLoginOut.setOnClickListener(listener);
 
 
     }

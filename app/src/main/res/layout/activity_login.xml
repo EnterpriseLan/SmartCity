@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="100dp"
     android:orientation="vertical"
     tools:context="com.nbpt.smartcity.LoginActivity">
 
@@ -24,6 +25,7 @@
         android:id="@+id/lab_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="密码：" />
 
     <EditText
@@ -51,4 +53,9 @@
         android:layout_height="wrap_content"
         android:text="退出" />
 
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册" />
 </LinearLayout>
